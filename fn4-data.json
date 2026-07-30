@@ -1,0 +1,243 @@
+{
+  "section": "FN4",
+  "title": "Transformation of Functions",
+  "learningObjective": "Apply transformations including horizontal and vertical shifts, stretches, and reflections to a function. Express the result of these transformations graphically and algebraically.",
+  "faqs": [
+    {
+      "id": "faq-1",
+      "category": "conceptual",
+      "question": "What is a vertical shift, and how do I recognize it in an equation?",
+      "answer": "A vertical shift moves the entire graph straight up or down, without changing its shape. You'll see it as a constant added or subtracted OUTSIDE the function: g(x) = f(x) + c. If c is positive, the graph shifts up; if c is negative, it shifts down. This is the one transformation that behaves exactly the way it looks — adding to the output moves the output up.<div class=\"graph-wrap\"><svg viewBox=\"0 0 260 210\" xmlns=\"http://www.w3.org/2000/svg\"><polyline points=\"60,150 110,190 190,70\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><polyline points=\"60,90 110,130 190,10\" fill=\"none\" stroke=\"#D4622A\" stroke-width=\"3\"/><line x1=\"110\" y1=\"190\" x2=\"110\" y2=\"130\" stroke=\"#4a4a5a\" stroke-width=\"2\" stroke-dasharray=\"4,3\" marker-end=\"url(#arrowV1)\"/><text x=\"118\" y=\"165\" font-size=\"11\" fill=\"#4a4a5a\" font-weight=\"600\">+c</text><text x=\"10\" y=\"160\" font-size=\"12\" fill=\"#0a3f52\" font-weight=\"600\">f(x)</text><text x=\"195\" y=\"20\" font-size=\"12\" fill=\"#D4622A\" font-weight=\"600\">f(x)+c</text><defs><marker id=\"arrowV1\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 Z\" fill=\"#4a4a5a\"/></marker></defs></svg></div><p class=\"graph-caption\">Adding c to the output shifts the whole graph straight up by c units.</p>"
+    },
+    {
+      "id": "faq-2",
+      "category": "conceptual",
+      "question": "What is a horizontal shift, and why does it feel \"backwards\" compared to what I'd expect?",
+      "answer": "A horizontal shift moves the entire graph left or right. You'll see it as a constant added or subtracted INSIDE the function's input: g(x) = f(x+c). Here's the surprise: if c is positive, the graph shifts LEFT, not right. Adding inside the parentheses moves the graph in the opposite direction of what most people first guess.<div class=\"graph-wrap\"><svg viewBox=\"0 0 300 210\" xmlns=\"http://www.w3.org/2000/svg\"><polyline points=\"120,150 170,190 250,70\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><polyline points=\"60,150 110,190 190,70\" fill=\"none\" stroke=\"#D4622A\" stroke-width=\"3\"/><line x1=\"170\" y1=\"190\" x2=\"110\" y2=\"190\" stroke=\"#4a4a5a\" stroke-width=\"2\" stroke-dasharray=\"4,3\" marker-end=\"url(#arrowH2)\"/><text x=\"125\" y=\"205\" font-size=\"11\" fill=\"#4a4a5a\" font-weight=\"600\">shifts left</text><text x=\"225\" y=\"55\" font-size=\"12\" fill=\"#0a3f52\" font-weight=\"600\">f(x)</text><text x=\"55\" y=\"55\" font-size=\"12\" fill=\"#D4622A\" font-weight=\"600\">f(x+c)</text><defs><marker id=\"arrowH2\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 Z\" fill=\"#4a4a5a\"/></marker></defs></svg></div><p class=\"graph-caption\">f(x+c) with c positive shifts the graph LEFT — the opposite of the intuitive guess.</p>"
+    },
+    {
+      "id": "faq-3",
+      "category": "conceptual",
+      "question": "What is a vertical reflection, and how is it different from a horizontal reflection?",
+      "answer": "A vertical reflection flips the graph over the x-axis: g(x) = −f(x), multiplying every output by −1. A horizontal reflection flips the graph over the y-axis instead: g(x) = f(−x), multiplying every input by −1. They can look similar for symmetric shapes, but for an asymmetric graph they produce genuinely different results.<div class=\"graph-wrap\"><svg viewBox=\"0 0 320 300\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"10\" y1=\"150\" x2=\"310\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"290\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><polyline points=\"170,110 210,170 280,60\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><polyline points=\"170,190 210,130 280,240\" fill=\"none\" stroke=\"#D4622A\" stroke-width=\"3\"/><polyline points=\"130,110 90,170 20,60\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"3\"/><text x=\"215\" y=\"55\" font-size=\"11\" fill=\"#0a3f52\" font-weight=\"600\">f(x)</text><text x=\"215\" y=\"255\" font-size=\"11\" fill=\"#D4622A\" font-weight=\"600\">&minus;f(x)</text><text x=\"15\" y=\"55\" font-size=\"11\" fill=\"#7C3AED\" font-weight=\"600\">f(&minus;x)</text></svg></div><p class=\"graph-caption\">Vertical reflection (orange) flips over the x-axis; horizontal reflection (purple) flips over the y-axis.</p>"
+    },
+    {
+      "id": "faq-4",
+      "category": "conceptual",
+      "question": "What is a vertical stretch or compression?",
+      "answer": "A vertical stretch or compression changes how tall the graph is: g(x) = a·f(x), multiplying every output by a. If a &gt; 1, the graph stretches away from the x-axis (gets taller). If 0 &lt; a &lt; 1, it compresses toward the x-axis (gets flatter). Points that were already sitting exactly on the x-axis don't move, since anything times zero is still zero.<div class=\"graph-wrap\"><svg viewBox=\"0 0 260 210\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"190\" x2=\"240\" y2=\"190\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><polyline points=\"70,160 130,175 190,120\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><polyline points=\"70,136 130,163 190,64\" fill=\"none\" stroke=\"#D4622A\" stroke-width=\"3\"/><text x=\"195\" y=\"115\" font-size=\"11\" fill=\"#0a3f52\" font-weight=\"600\">f(x)</text><text x=\"195\" y=\"60\" font-size=\"11\" fill=\"#D4622A\" font-weight=\"600\">a&middot;f(x), a&gt;1</text></svg></div><p class=\"graph-caption\">Multiplying the output by a &gt; 1 pulls the graph away from the x-axis, making it taller.</p>"
+    },
+    {
+      "id": "faq-5",
+      "category": "conceptual",
+      "question": "What is a horizontal stretch or compression, and why does it also feel \"backwards\"?",
+      "answer": "A horizontal stretch or compression changes how wide the graph is: g(x) = f(ax), where every input gets multiplied by a before the function acts on it — which means every point's horizontal distance from the y-axis gets DIVIDED by a. So a &gt; 1 actually compresses the graph toward the y-axis (narrower), while 0 &lt; a &lt; 1 stretches it away (wider) — the opposite of what the size of a might suggest at first glance.<div class=\"graph-wrap\"><svg viewBox=\"0 0 260 200\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"190\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><polyline points=\"100,110 150,170 210,60\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><polyline points=\"80,110 105,170 135,60\" fill=\"none\" stroke=\"#D4622A\" stroke-width=\"3\"/><text x=\"180\" y=\"55\" font-size=\"11\" fill=\"#0a3f52\" font-weight=\"600\">f(x)</text><text x=\"90\" y=\"20\" font-size=\"11\" fill=\"#D4622A\" font-weight=\"600\">f(ax), a&gt;1</text></svg></div><p class=\"graph-caption\">Multiplying the input by a &gt; 1 pulls the graph IN toward the y-axis, making it narrower.</p>"
+    },
+    {
+      "id": "faq-6",
+      "category": "conceptual",
+      "question": "Why do horizontal transformations behave opposite to what seems intuitive, while vertical transformations behave exactly as expected?",
+      "answer": "Vertical transformations act on the OUTPUT after the function has already done its job — so whatever you do to the output visibly happens to the output. Horizontal transformations act on the INPUT before the function even runs, which means you have to ask \"what x-value would produce the same result as before?\" — and working that out backward is exactly what flips the direction. In short: outputs move the way you'd naturally expect; inputs move in reverse because you're solving for them, not just applying an operation to them directly."
+    },
+    {
+      "id": "faq-7",
+      "category": "sticking-points",
+      "question": "How do I identify all the transformations happening in an equation like g(x) = −2f(x+3) − 1?",
+      "answer": "Break the equation into pieces and interpret each one separately, working from the inside out.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( g(x) = -2f(x+3)-1 \\)</p><p class=\"math-line\"><strong>Inside the parentheses:</strong> \\( x+3 \\) &rarr; horizontal shift LEFT 3</p><p class=\"math-line\"><strong>Coefficient in front:</strong> \\( -2 \\) &rarr; vertical stretch by 2, AND a vertical reflection (the negative sign)</p><p class=\"math-line\"><strong>Constant at the end:</strong> \\( -1 \\) &rarr; vertical shift DOWN 1</p></div>"
+    },
+    {
+      "id": "faq-8",
+      "category": "sticking-points",
+      "question": "How do I graph a transformation without plotting every point from scratch?",
+      "answer": "Pick a few easy-to-track key points on the original graph (like the vertex, an intercept, or any labeled point), apply each transformation to just those key points, then sketch the new curve through the transformed points using the same overall shape as the original. This is much faster than building an entire new table of values."
+    },
+    {
+      "id": "faq-9",
+      "category": "sticking-points",
+      "question": "What order do I apply multiple transformations in when there's more than one?",
+      "answer": "Apply transformations in this order: horizontal shifts and reflections/stretches happening inside the parentheses first, then vertical stretches/reflections (the coefficient out front), and vertical shifts (the constant added or subtracted) last. This mirrors order of operations — since the inside-the-parentheses changes affect what gets fed into the function, they need to happen first, before anything is done to the output."
+    },
+    {
+      "id": "faq-10",
+      "category": "sticking-points",
+      "question": "Why does applying transformations in the wrong order give a different result?",
+      "answer": "Because each transformation changes the graph that the NEXT transformation gets applied to. If you shift first and then reflect, you're reflecting the already-shifted graph. If you reflect first and then shift, you're shifting the already-reflected graph. Since reflecting and shifting don't commute (doing them in a different order changes the outcome), the sequence genuinely matters — this isn't just a technicality, it changes where the final graph ends up."
+    },
+    {
+      "id": "faq-11",
+      "category": "sticking-points",
+      "question": "How do I write the equation for a transformed function if I'm just given the transformations in words?",
+      "answer": "Start with f(x), then build the equation from the inside out, applying each transformation as you go: modify the input first for anything horizontal, then apply the vertical stretch/reflection, then add the vertical shift last.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\"Shift right 4, reflect vertically, stretch vertically by 3, then shift up 2\"</p><p class=\"math-line\">Shift right 4: \\( f(x-4) \\)</p><p class=\"math-line\">Reflect and stretch by 3: \\( -3f(x-4) \\)</p><p class=\"math-line\">Shift up 2: \\( g(x) = -3f(x-4)+2 \\)</p></div>"
+    },
+    {
+      "id": "faq-12",
+      "category": "sticking-points",
+      "question": "How do I tell the difference between a vertical stretch and a vertical compression just by looking at the value of a?",
+      "answer": "Look at the size of a, ignoring its sign. If |a| &gt; 1, it's a stretch (taller, more dramatic). If 0 &lt; |a| &lt; 1, it's a compression (flatter, less dramatic). A negative sign on a is a completely separate piece of information — it tells you there's also a reflection, but it doesn't affect whether the transformation is a stretch or compression."
+    },
+    {
+      "id": "faq-13",
+      "category": "sticking-points",
+      "question": "How do I tell the difference between a horizontal stretch and a horizontal compression just by looking at the value of a?",
+      "answer": "This one is the reverse of the vertical case. If |a| &gt; 1, it's a compression (narrower, squeezed toward the y-axis). If 0 &lt; |a| &lt; 1, it's a stretch (wider, pulled away from the y-axis). Remember: for horizontal transformations, a bigger number packs things in tighter, rather than spreading them out."
+    },
+    {
+      "id": "faq-14",
+      "category": "connections",
+      "question": "How do transformations connect to everything we've learned about functions so far?",
+      "answer": "Transformations are really just a special, very predictable case of function composition and evaluation from FN2 and FN5. Every transformed function is still a function you can evaluate, still has a domain and range you can determine (though shifted, reflected, or stretched from the original), and still has all the graph features from FN3 — they've simply moved, flipped, or resized."
+    },
+    {
+      "id": "faq-15",
+      "category": "connections",
+      "question": "Why do transformations matter beyond just moving a graph around?",
+      "answer": "Once you know how one \"parent function\" behaves, transformations let you instantly understand an entire family of related functions without starting from scratch each time. This becomes essential for the rest of precalculus — polynomial, rational, exponential, logarithmic, and trigonometric functions are all typically taught by first learning the parent function's shape, then applying exactly the transformation rules from this section to handle every variation you'll ever see."
+    }
+  ],
+  "videos": [
+    {
+      "id": "vid-1",
+      "title": "Function Transformations: Horizontal and Vertical Stretches and Compressions",
+      "url": "https://www.youtube.com/watch?v=2S9LUinJ8-w",
+      "description": "Explains how a and b affect the graph of a*f(b(x-c))+d, covering stretches and compressions in both directions together.",
+      "category": "combined-transformations",
+      "relatedFaqs": [
+        "faq-4",
+        "faq-5",
+        "faq-6",
+        "faq-7",
+        "faq-9",
+        "faq-12",
+        "faq-13"
+      ]
+    },
+    {
+      "id": "vid-2",
+      "title": "Graph a Transformation of a Line Segment: g(x)=-af(x+c)+d",
+      "url": "https://youtu.be/mlJpUd-2hcI",
+      "description": "Worked example applying a full set of combined transformations — reflection, stretch, and both shifts — to a simple line segment.",
+      "category": "combined-transformations",
+      "relatedFaqs": [
+        "faq-7",
+        "faq-9",
+        "faq-11"
+      ]
+    },
+    {
+      "id": "vid-3",
+      "title": "Graphing Multiple Function Transformations (Part 1 of 2)",
+      "url": "https://youtu.be/4zXn_s9RHWI",
+      "description": "How to graph a function in the form y = a·f(b(x+c))+d by applying each transformation in the correct order.",
+      "category": "combined-transformations",
+      "relatedFaqs": [
+        "faq-7",
+        "faq-9",
+        "faq-11"
+      ]
+    },
+    {
+      "id": "vid-4",
+      "title": "Write a Function Rule in Terms of f(x) — Vertical Stretch & Shifts (Ex 1)",
+      "url": "https://youtu.be/5RlD5H8ha50",
+      "description": "Writing the equation of a transformed function described in words, involving a vertical stretch and shifts in both directions.",
+      "category": "writing-rules",
+      "relatedFaqs": [
+        "faq-11"
+      ]
+    },
+    {
+      "id": "vid-5",
+      "title": "Write a Function Rule in Terms of f(x) — Horizontal Stretch & Reflection (Ex 2)",
+      "url": "https://youtu.be/rmNonDF70Vo",
+      "description": "A second worked example writing a transformed function's equation, this time involving a horizontal stretch and a reflection.",
+      "category": "writing-rules",
+      "relatedFaqs": [
+        "faq-11"
+      ]
+    },
+    {
+      "id": "vid-6",
+      "title": "Transformation: Graph |f(x)|, Given f(x)",
+      "url": "https://youtu.be/B5fINO3gHJE",
+      "description": "How to graph the absolute value of a function from its original graph — any part below the x-axis reflects upward.",
+      "category": "matching-reflecting",
+      "relatedFaqs": [
+        "faq-3"
+      ]
+    },
+    {
+      "id": "vid-7",
+      "title": "Matching Transformations of the Basic Rational Function",
+      "url": "https://youtu.be/W0KcgElXbzg",
+      "description": "Matching a transformed graph of a rational function to its correct equation, reinforcing stretch/compression and reflection recognition.",
+      "category": "matching-reflecting",
+      "relatedFaqs": [
+        "faq-12",
+        "faq-13"
+      ]
+    }
+  ],
+  "apps": [
+    {
+      "id": "app-1",
+      "title": "Function Morph",
+      "url": "https://functionmorph.netlify.app/",
+      "description": "Interactively apply shifts, reflections, and stretches to a base function and watch the graph transform in real time, connecting each algebraic change to its visual effect.",
+      "relatedFaqs": [
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "faq-5",
+        "faq-7",
+        "faq-9"
+      ]
+    },
+    {
+      "id": "app-2",
+      "title": "Parent Functions Explorer",
+      "url": "https://parentfunctionexploration.netlify.app/",
+      "description": "Explore the family of common parent functions (linear, quadratic, square root, cubic, absolute value, etc.) and see how transformation rules apply consistently across each one.",
+      "relatedFaqs": [
+        "faq-14",
+        "faq-15"
+      ]
+    }
+  ],
+  "prompts": {
+    "guided": [
+      {
+        "id": "prompt-1",
+        "title": "Practice Identifying Transformations",
+        "prompt": "I'm learning to identify transformations from an equation like g(x) = -2f(x+3)-1. Give me an equation like this involving a base function f(x), and ask me to break it down piece by piece into its individual transformations (horizontal shift, reflection, stretch/compression, vertical shift). Check my answer and explain any part I get wrong."
+      },
+      {
+        "id": "prompt-2",
+        "title": "Understand Why Horizontal Transformations Feel Backwards",
+        "prompt": "I'm confused about why f(x+3) shifts a graph LEFT instead of right. Can you explain this using a concrete numerical example — picking specific x-values and showing me exactly why the graph has to move left for the equation to still make sense? Then quiz me with a few more examples to check my understanding."
+      },
+      {
+        "id": "prompt-3",
+        "title": "Practice the Order of Multiple Transformations",
+        "prompt": "I'm learning what order to apply multiple transformations in. Give me an equation with at least three transformations combined, and walk me through applying them in the correct order to a few key points on a simple base function. Then show me what would happen if I did them in the WRONG order, so I can see why the order actually matters."
+      },
+      {
+        "id": "prompt-4",
+        "title": "Practice Writing Transformation Equations from Words",
+        "prompt": "I'm learning to translate a word description of transformations into an equation. Give me a description like 'shift left 2, reflect vertically, stretch by a factor of 3, then shift down 1' using a base function f(x), and ask me to build the correct equation step by step. Check my work and make sure I have the order right."
+      },
+      {
+        "id": "prompt-5",
+        "title": "Connect Transformations to Future Function Families",
+        "prompt": "I just learned how to shift, reflect, and stretch functions. Can you explain why this skill is going to matter so much for the rest of precalculus, using one specific example of a 'parent function' (like a quadratic or square root function) and showing me how understanding its transformations helps me quickly understand a whole family of related functions?"
+      }
+    ],
+    "open": [
+      {
+        "id": "open-1",
+        "title": "Create Your Own",
+        "prompt": "Use the AI tool of your choice. Start by describing what you're confused about or curious about from Section FN4 (Transformation of Functions). Ask the AI to help you explore that idea. Share what you learned and what surprised you."
+      }
+    ]
+  }
+}

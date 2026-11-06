@@ -7,13 +7,13 @@
       "id": "faq-1",
       "category": "conceptual",
       "question": "What is an inverse function, and what does it mean for one function to \"undo\" another?",
-      "answer": "An inverse function reverses whatever the original function did. If f takes an input and produces an output, the inverse takes that same output and hands you back the original input. Formally, f has an inverse g when f(g(x)) = x and g(f(x)) = x for every x — plugging one into the other, in either order, just gets you back to where you started.<div class=\"example-box\"><div class=\"label\">Example</div><p class=\"math-line\">Converting Fahrenheit to Celsius, and Celsius back to Fahrenheit, are inverses of each other: each one exactly undoes what the other one did.</p></div>"
+      "answer": "An inverse function reverses whatever the original function did. If f takes an input and produces an output, the inverse takes that same output and hands you back the original input. Formally, f has an inverse g when f(g(x)) = x for every x in the domain of g, and g(f(x)) = x for every x in the domain of f — plugging one into the other, in either order, just gets you back to where you started.<div class=\"example-box\"><div class=\"label\">Example</div><p class=\"math-line\">Converting Fahrenheit to Celsius, and Celsius back to Fahrenheit, are inverses of each other: each one exactly undoes what the other one did: \\( C = \\dfrac{5}{9}(F - 32) \\) and \\( F = \\dfrac{9}{5}C + 32 \\).</p></div>"
     },
     {
       "id": "faq-2",
       "category": "conceptual",
       "question": "What is the notation for an inverse function, and how is f⁻¹(x) different from 1/f(x)?",
-      "answer": "An inverse function is written f⁻¹(x), read \"f inverse of x.\" This is a completely different thing from 1/f(x) — the −1 here is not an exponent, even though it looks like one. f⁻¹(x) means \"the inverse function,\" while 1/f(x) means \"one divided by f(x).\" These are almost never equal to each other, so it's worth being extra careful not to mix them up."
+      "answer": "An inverse function is written f⁻¹(x), read \"f inverse of x.\" This is a completely different thing from 1/f(x) — the −1 here is not an exponent, even though it looks like one. f⁻¹(x) means \"the inverse function,\" while 1/f(x) means \"one divided by f(x).\" They are different functions, so treat them as unrelated."
     },
     {
       "id": "faq-3",
@@ -31,37 +31,37 @@
       "id": "faq-vlt",
       "category": "conceptual",
       "question": "What is the vertical line test, and why does it work?",
-      "answer": "The vertical line test checks whether a graph represents a function at all: if every vertical line you could draw crosses the graph at most once, it's a function. If any vertical line crosses the graph two or more times, it isn't. It works because a vertical line represents a single x-value — if that line crosses the graph more than once, that one x-value has more than one output, which breaks the basic definition of a function (each input gets exactly one output). This is the test from FN1, and it's worth keeping fresh here since the horizontal line test in the next question is its direct mirror image.<div class=\"graph-wrap\"><svg viewBox=\"0 0 340 240\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"30\" y1=\"200\" x2=\"310\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M 70 60 Q 170 280 270 60\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><line x1=\"170\" y1=\"20\" x2=\"170\" y2=\"220\" stroke=\"#D4622A\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><circle cx=\"170\" cy=\"170\" r=\"5\" fill=\"#D4622A\"/><text x=\"180\" y=\"30\" font-size=\"12\" fill=\"#D4622A\" font-weight=\"700\">Passes — crosses once</text></svg></div><p class=\"graph-caption\">This vertical line crosses the curve exactly once, consistent with every other vertical line you could draw — so this graph is a function.</p>"
+      "answer": "<em>Extension:</em> the vertical line test is review from FN1; the FN6 CheckIt exercise does not ask for it. The vertical line test checks whether a graph represents a function at all: if every vertical line you could draw crosses the graph at most once, it's a function. If any vertical line crosses the graph two or more times, it isn't. It works because a vertical line represents a single x-value — if that line crosses the graph more than once, that one x-value has more than one output, which breaks the basic definition of a function (each input gets exactly one output). This is the test from FN1, and it's worth keeping fresh here since the horizontal line test in the next question is its direct mirror image.<div class=\"graph-wrap fig-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable figure: vertical line test\"><svg role=\"img\" aria-label=\"A U-shaped curve opening upward, with arrows on both ends showing that it keeps rising. A dashed vertical line through the lowest point crosses the curve exactly once, at a dot. Label: Passes, crosses once.\" width=\"340\" height=\"240\" style=\"max-width:100%;height:auto;min-width:300px\" viewBox=\"0 0 340 240\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"30\" y1=\"200\" x2=\"310\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"1.5\"/><path d=\"M 70 60 Q 170 280 270 60\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><polygon points=\"67.5,54.5 78.4,63.9 67.4,68.9\" fill=\"#0a3f52\"/><polygon points=\"272.5,54.5 272.6,68.9 261.6,63.9\" fill=\"#0a3f52\"/><line x1=\"170\" y1=\"20\" x2=\"170\" y2=\"220\" stroke=\"#b04c19\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><circle cx=\"170\" cy=\"170\" r=\"5\" fill=\"#b04c19\"/><text x=\"180\" y=\"32\" font-size=\"14\" fill=\"#b04c19\" font-weight=\"700\">Passes: crosses once</text></svg></div><p class=\"graph-caption\">Every vertical line crosses this curve at most once (one is drawn here), so the graph is a function.</p>"
     },
     {
       "id": "faq-5",
       "category": "conceptual",
       "question": "What is the horizontal line test, and how does it relate to the vertical line test from FN1?",
-      "answer": "The horizontal line test checks whether a function is one-to-one: if every horizontal line you could draw crosses the graph at most once, the function is one-to-one. If any horizontal line crosses the graph two or more times, it isn't. This is the direct counterpart to FN1's vertical line test — that one checked whether a graph was a function at all (one output per input); this one checks the mirror-image question (one input per output).<div class=\"graph-wrap\"><svg viewBox=\"0 0 340 240\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"30\" y1=\"200\" x2=\"310\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M 70 60 Q 170 280 270 60\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><line x1=\"50\" y1=\"120\" x2=\"290\" y2=\"120\" stroke=\"#D4622A\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><circle cx=\"103\" cy=\"120\" r=\"5\" fill=\"#D4622A\"/><circle cx=\"237\" cy=\"120\" r=\"5\" fill=\"#D4622A\"/><text x=\"115\" y=\"30\" font-size=\"12\" fill=\"#D4622A\" font-weight=\"700\">Fails — crosses twice</text></svg></div><p class=\"graph-caption\">This horizontal line crosses the curve twice, so this function is NOT one-to-one.</p>"
+      "answer": "<em>Extension:</em> the horizontal line test goes beyond the FN6 CheckIt exercise, where every function is already one-to-one. The horizontal line test checks whether a function is one-to-one: if every horizontal line you could draw crosses the graph at most once, the function is one-to-one. If any horizontal line crosses the graph two or more times, it isn't. This is the direct counterpart to FN1's vertical line test — that one checked whether a graph was a function at all (one output per input); this one checks the mirror-image question (one input per output).<div class=\"graph-wrap fig-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable figure: horizontal line test\"><svg role=\"img\" aria-label=\"The same U-shaped curve opening upward, with arrows on both ends. A dashed horizontal line crosses the curve twice, once on each side of the lowest point, at two dots. Label: Fails, crosses twice.\" width=\"340\" height=\"240\" style=\"max-width:100%;height:auto;min-width:300px\" viewBox=\"0 0 340 240\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"30\" y1=\"200\" x2=\"310\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"1.5\"/><path d=\"M 70 60 Q 170 280 270 60\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><polygon points=\"67.5,54.5 78.4,63.9 67.4,68.9\" fill=\"#0a3f52\"/><polygon points=\"272.5,54.5 272.6,68.9 261.6,63.9\" fill=\"#0a3f52\"/><line x1=\"50\" y1=\"120\" x2=\"290\" y2=\"120\" stroke=\"#b04c19\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><circle cx=\"102.6\" cy=\"120\" r=\"5\" fill=\"#b04c19\"/><circle cx=\"237.4\" cy=\"120\" r=\"5\" fill=\"#b04c19\"/><text x=\"170\" y=\"32\" font-size=\"14\" fill=\"#b04c19\" font-weight=\"700\" text-anchor=\"middle\">Fails: crosses twice</text></svg></div><p class=\"graph-caption\">This horizontal line crosses the curve twice, so this function is NOT one-to-one.</p>"
     },
     {
       "id": "faq-6",
       "category": "conceptual",
       "question": "How are the domain and range of a function related to the domain and range of its inverse?",
-      "answer": "They swap. Whatever was the domain of the original function becomes the range of the inverse, and whatever was the range of the original function becomes the domain of the inverse. This makes sense given what an inverse does — since it reverses inputs and outputs, it makes sense that it also reverses which set is the domain and which is the range."
+      "answer": "They swap. Whatever was the domain of the original function becomes the range of the inverse, and whatever was the range of the original function becomes the domain of the inverse. This makes sense given what an inverse does — since it reverses inputs and outputs, it makes sense that it also reverses which set is the domain and which is the range.<div class=\"example-box\"><div class=\"label\">Example</div><p class=\"math-line\">For \\( f(x) = \\dfrac{2x+5}{x-3} \\), the domain is \\( x \\neq 3 \\) and the range is \\( y \\neq 2 \\); for \\( f^{-1}(x) = \\dfrac{3x+5}{x-2} \\), the domain is \\( x \\neq 2 \\) and the range is \\( y \\neq 3 \\).</p></div>"
     },
     {
       "id": "faq-7",
       "category": "sticking-points",
       "question": "How do I determine if a function is one-to-one from its graph?",
-      "answer": "Apply the horizontal line test: imagine sliding a horizontal line up and down across the entire graph. If it ever touches the graph in more than one place at the same time, the function is not one-to-one. If every horizontal line touches at most once, the function is one-to-one."
+      "answer": "<em>Extension:</em> the horizontal line test goes beyond the FN6 CheckIt exercise, where every function is already one-to-one. Apply the horizontal line test: imagine sliding a horizontal line up and down across the entire graph. If it ever touches the graph in more than one place at the same time, the function is not one-to-one. If every horizontal line touches at most once, the function is one-to-one."
     },
     {
       "id": "faq-8",
       "category": "sticking-points",
       "question": "How do I find the inverse of a simple function by reversing the operations in opposite order?",
-      "answer": "List out, in order, every operation the function performs on x. Then reverse both the order AND each individual operation (addition becomes subtraction, multiplication becomes division, and so on).<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( f(x) = \\dfrac{x-5}{3} \\)</p><p class=\"math-line\">Order of operations on x: subtract 5, then divide by 3.</p><p class=\"math-line\">Reverse, in opposite order: multiply by 3, then add 5.</p><p class=\"math-line\" style=\"margin-top:0.5rem;\">\\( f^{-1}(x) = 3x+5 \\)</p></div>"
+      "answer": "List out, in order, every operation the function performs on x. Then reverse both the order AND each individual operation (addition becomes subtraction, multiplication becomes division, and so on). This works when x appears only once in the formula. In a fraction like (2x + 3)/(x − 5), x appears twice, so there is no single chain of steps to reverse; use swap-and-solve (faq-9) instead.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( f(x) = \\dfrac{x-5}{3} \\)</p><p class=\"math-line\">Order of operations on x: subtract 5, then divide by 3.</p><p class=\"math-line\">Reverse, in opposite order: multiply by 3, then add 5.</p><p class=\"math-line\" style=\"margin-top:0.5rem;\">\\( f^{-1}(x) = 3x+5 \\)</p></div>"
     },
     {
       "id": "faq-9",
       "category": "sticking-points",
       "question": "How do I find the inverse of a function using the swap-x-and-y method?",
-      "answer": "Rewrite f(x) as y, swap x and y everywhere in the equation, then solve the new equation for y. This method works for any function, including more complicated ones where the \"reverse the operations\" trick from faq-8 gets difficult to track.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( h(x) = \\dfrac{x}{x+1} \\) &rarr; \\( y = \\dfrac{x}{x+1} \\)</p><p class=\"math-line\">Swap x and y: \\( x = \\dfrac{y}{y+1} \\)</p><p class=\"math-line\">Clear the denominator: \\( x(y+1) = y \\)</p><p class=\"math-line\">Distribute and gather y-terms: \\( xy+x=y \\) &rarr; \\( x = y-xy \\) &rarr; \\( x=y(1-x) \\)</p><p class=\"math-line\" style=\"margin-top:0.5rem;\">Solve for y: \\( h^{-1}(x) = \\dfrac{x}{1-x} \\)</p></div>"
+      "answer": "Rewrite f(x) as y, swap x and y everywhere in the equation, then solve the new equation for y. This works for any one-to-one function, and it is the method to use when x appears more than once in the formula (as in a fraction), where there is no single chain of steps to reverse. If a function is not one-to-one, swapping still gives an equation, but solving it does not give one y for each x: y = x² becomes y = ±√x. Every function on the FN6 CheckIt is one-to-one, so this never happens there.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( h(x) = \\dfrac{x}{x+1} \\) &rarr; \\( y = \\dfrac{x}{x+1} \\)</p><p class=\"math-line\">Swap x and y: \\( x = \\dfrac{y}{y+1} \\)</p><p class=\"math-line\">Clear the denominator: \\( x(y+1) = y \\)</p><p class=\"math-line\">Distribute and gather y-terms: \\( xy+x=y \\) &rarr; \\( x = y-xy \\) &rarr; \\( x=y(1-x) \\)</p><p class=\"math-line\" style=\"margin-top:0.5rem;\">Solve for y: \\( h^{-1}(x) = \\dfrac{x}{1-x} \\), for \\( x \\neq 1 \\)</p><p class=\"math-line\">The value 1 is the one output h never reaches, so it is the one input \\( h^{-1} \\) cannot take.</p></div>"
     },
     {
       "id": "faq-10",
@@ -73,13 +73,13 @@
       "id": "faq-11",
       "category": "sticking-points",
       "question": "What does it mean to \"restrict the domain\" of a function so it has an inverse?",
-      "answer": "If a function fails the horizontal line test over its full domain, you can sometimes chop off part of the domain so that what's left DOES pass the horizontal line test. You're not changing the function's rule — you're just agreeing to only look at part of its graph, specifically a piece where it behaves one-to-one."
+      "answer": "<em>Extension:</em> restricted domains go beyond the FN6 CheckIt exercise, where every function is already one-to-one. If a function fails the horizontal line test over its full domain, you can sometimes chop off part of the domain so that what's left DOES pass the horizontal line test. You're not changing the function's rule — you're just agreeing to only look at part of its graph, specifically a piece where it behaves one-to-one."
     },
     {
       "id": "faq-12",
       "category": "sticking-points",
       "question": "How do I find the inverse of a function whose domain has been restricted, like f(x) = x² for x ≥ 0?",
-      "answer": "Find the inverse using either method from faq-8 or faq-9 as usual — the restriction doesn't change the algebra. The restriction just tells you which piece of the original graph you're working with, which becomes important when stating the inverse's own domain (remember, from faq-6, the original function's range becomes the inverse's domain).<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( f_0(x)=x^2 \\), restricted to \\( x \\geq 0 \\)</p><p class=\"math-line\">Swap and solve: \\( x=y^2 \\) &rarr; \\( y=\\sqrt{x} \\) (taking only the positive root, matching the restriction)</p><p class=\"math-line\" style=\"margin-top:0.5rem;\">\\( f_0^{-1}(x) = \\sqrt{x} \\)</p></div>"
+      "answer": "<em>Extension:</em> restricted domains go beyond the FN6 CheckIt exercise, where every function is already one-to-one. Use swap-and-solve as usual (faq-9). The restriction matters at one step: undoing the square gives two candidates, and the restriction tells you which one to keep. It also gives the inverse's domain and range, which trade places with the original's (faq-6).<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( f(x)=x^2 \\), restricted to \\( x \\geq 0 \\) (so its range is \\( y \\geq 0 \\))</p><p class=\"math-line\">Swap: \\( x=y^2 \\), where now \\( y \\geq 0 \\)</p><p class=\"math-line\">Solve: \\( y=\\pm\\sqrt{x} \\); since \\( y \\geq 0 \\), keep the nonnegative root, \\( y=\\sqrt{x} \\)</p><p class=\"math-line\" style=\"margin-top:0.5rem;\">\\( f^{-1}(x) = \\sqrt{x} \\), with domain \\( x \\geq 0 \\) and range \\( y \\geq 0 \\)</p></div>"
     },
     {
       "id": "faq-13",
@@ -91,7 +91,7 @@
       "id": "faq-14",
       "category": "connections",
       "question": "Why do inverse functions matter beyond just \"undoing\" another function?",
-      "answer": "Inverse functions show up constantly whenever you need to reverse a process — converting units back and forth, solving for an original input when you only know the output, or working backward through a real-world model. Later in the course, you'll meet specific inverse function pairs that are foundational to precalculus: logarithms are defined as the inverse of exponential functions, and inverse trigonometric functions let you work backward from a ratio to an angle."
+      "answer": "Inverse functions show up constantly whenever you need to reverse a process — converting units back and forth, solving for an original input when you only know the output, or working backward through a real-world model. Later in the course, you'll meet specific inverse function pairs that are foundational to precalculus: logarithms are defined as the inverse of exponential functions, and inverse trigonometric functions let you work backward from a ratio to an angle. (Logarithms and inverse trig functions come later in the course and are beyond the FN6 CheckIt exercise.)"
     }
   ],
   "videos": [
@@ -110,7 +110,7 @@
       "id": "vid-2",
       "title": "Find an Inverse Function From a Table",
       "url": "https://youtu.be/TSztRfzmk0M",
-      "description": "Finding an inverse function directly from a table of values, by swapping the input and output columns.",
+      "description": "Finding an inverse function directly from a table of values, by swapping the input and output columns. (Extension: inverses from tables go beyond the FN6 CheckIt exercise.)",
       "category": "values",
       "relatedFaqs": [
         "faq-6"
@@ -120,7 +120,7 @@
       "id": "vid-3",
       "title": "Function and Inverse Function Values Using a Table",
       "url": "https://www.youtube.com/watch?v=o5GIiwVMo2o",
-      "description": "Determining function values and inverse function values using a table of values.",
+      "description": "Determining function values and inverse function values using a table of values. (Extension: tables go beyond the FN6 CheckIt exercise.)",
       "category": "values",
       "relatedFaqs": [
         "faq-6"
@@ -130,7 +130,7 @@
       "id": "vid-4",
       "title": "Find Inverse Function Values Without Finding the Inverse Function",
       "url": "https://www.youtube.com/watch?v=lLzKAIof1kw",
-      "description": "A shortcut for finding a specific inverse function value without first solving for the entire inverse function.",
+      "description": "A shortcut for finding a specific inverse function value without first solving for the entire inverse function. (Extension: finding single inverse values goes beyond the FN6 CheckIt exercise, which asks for the inverse formula.)",
       "category": "values",
       "relatedFaqs": [
         "faq-2",
@@ -154,35 +154,35 @@
     "guided": [
       {
         "id": "prompt-1",
-        "title": "Understand the Undo Relationship",
-        "prompt": "I'm learning about inverse functions. Give me a simple function and its inverse, and help me see step by step how plugging a number through the original function and then through the inverse brings me back to where I started. Then give me a new function and ask me to predict what its inverse would need to do before I calculate it."
+        "title": "Undo the Steps in Reverse Order",
+        "prompt": "I'm practicing FN6 in Math 172: finding the inverse of a function like (x + 3)^5 - 2, which adds, raises to a power, then adds again. My notes say to undo the steps in reverse order, and that a power of 1/3 means a cube root. Give me one function at a time in the form (x + b)^r + a, where r is 3, 5, 7, 1/3, 1/5 or 1/7, and a and b are two different numbers from 1, 2, 3, 5, 7, each with any sign. For each one, before I write any algebra, I'll list in order the steps the function does to x, then list the undo steps in the order I'll do them. Don't confirm until I explain why the last step is undone first. Then I'll write the inverse the way CheckIt does, with roots as fractional powers, and test it by putting one output of the function into my inverse to see if I get the input back. When an odd root of a negative number comes up, use the real root: the cube root of -8 is -2. On the third function, show me your own list of undo steps with one deliberate mistake in it (for example, undoing in the original order, or repeating a step instead of undoing it) and ask me to find it. After I respond, check my reasoning and give me the fully corrected solution before we finish."
       },
       {
         "id": "prompt-2",
-        "title": "Practice the Horizontal Line Test",
-        "prompt": "I'm learning to determine if a function is one-to-one using the horizontal line test. Describe a few different function graphs to me in words (don't just show me images), and ask me to predict whether each one would pass or fail the horizontal line test, and explain my reasoning before you confirm the answer."
+        "title": "Extension: Why CheckIt's Functions Always Have Inverses",
+        "prompt": "This goes beyond the FN6 CheckIt exercise. My notes say a function has an inverse only if it is one-to-one: no two different inputs give the same output. The horizontal line test checks this on a graph: if some horizontal line crosses the graph more than once, the function is not one-to-one. Describe these five graphs to me in words, one at a time, in a mixed-up order: y = x^3, y = x^2, y = (x - 1)^(1/3) + 2, y = |x|, and y = 2x - 1. For each, I'll predict whether it passes the horizontal line test, and if it fails I'll name two inputs with the same output. Don't confirm until I explain. Then state one reason why every CheckIt function (x + b)^r + a, with r = 3, 5, 7, 1/3, 1/5 or 1/7, is one-to-one, and put one deliberate mistake in your reason (for example, \"because the exponent is positive\"). I'll check your reason against my notes and test it on y = x^2. After I respond, check my reasoning and give me the fully corrected solution before we finish."
       },
       {
         "id": "prompt-3",
-        "title": "Practice Both Inverse-Finding Methods",
-        "prompt": "I'm learning two methods for finding an inverse function: reversing the operations in opposite order, and the swap-x-and-y method. Give me a simple function and walk me through finding its inverse using the reverse-operations method. Then give me a more complex function (like a rational function) and walk me through the swap-x-and-y method instead, explaining why that method works better here."
+        "title": "Solve a Fraction for y",
+        "prompt": "I'm practicing FN6 in Math 172: finding the inverse of a fraction f(x) = (ax + b)/(cx + d). My notes say: write y = f(x), swap x and y, multiply both sides by the denominator, get every y term on one side, factor out y, and divide. Give me one function at a time where a, b, c and d are four different numbers from 1, 2, 3, 5, 7, each with any sign, so the function always has an inverse. Sometimes write it the way CheckIt does when the denominator starts with a minus, with the minus out front, like -(3x - 1)/(2x - 5). I'll do each step myself; ask me one short question at a time and don't show a step before I try it. Make me say why I can't divide by x or cancel terms across the fraction bar. On the third function, show me your own solution with one deliberate mistake in it (for example, moving a term across without changing its sign, or flipping the fraction to get 1/f(x)). I'll find it and test your answer by putting f(1) into it to see if I get 1 back. After I respond, check my reasoning and give me the fully corrected solution before we finish."
       },
       {
         "id": "prompt-4",
-        "title": "Practice Verifying Inverses",
-        "prompt": "I'm learning to verify that two functions are inverses by checking that f(g(x)) = x and g(f(x)) = x. Give me a pair of functions that ARE inverses and walk me through verifying it. Then give me a pair that are NOT actually inverses, and help me see where the composition breaks down."
+        "title": "Same Answer, Different Look",
+        "prompt": "I'm practicing FN6 in Math 172. CheckIt shows answers in its own form: roots as fractional powers like (x + 7)^(1/5), the power written before the constant, and a leading minus pulled out front, so (-2x + 5)/(3x + 1) may appear as -(2x - 5)/(3x + 1). Give me one inverse problem at a time: either (x + b)^r + a with r = 3, 5, 7, 1/3, 1/5 or 1/7 and a, b two different numbers from 1, 2, 3, 5, 7 with any signs, or (ax + b)/(cx + d) with a, b, c, d four different numbers from 1, 2, 3, 5, 7 with any signs. After I find my inverse, show me an \"answer key\" that may look different from mine. I'll decide whether the two are equal, first by rewriting one form into the other, then by putting one output of f into each. In one round, without telling me which, make the answer key wrong in a way that still looks close (for example, one sign changed, or the reciprocal 1/f(x)). I'll check the key against my own composition f(f^(-1)(x)) = x. After I respond, check my reasoning and give me the fully corrected solution before we finish."
       },
       {
         "id": "prompt-5",
-        "title": "Explore Restricting the Domain",
-        "prompt": "I'm learning why some functions, like f(x) = x^2, need their domain restricted before they can have an inverse. Help me understand why the full function fails the horizontal line test, then walk me through how restricting the domain to x ≥ 0 fixes this, and help me find the resulting inverse function."
+        "title": "Extension: Restricting the Domain of x^2",
+        "prompt": "This goes beyond the FN6 CheckIt exercise. I'm learning why f(x) = x^2 has no inverse on all real numbers, and how restricting the domain fixes that. First ask me to find two inputs that give the output 9, and to explain what that means for the horizontal line test. Then ask me which part of the graph is left when the domain is restricted to x >= 0, and have me find the inverse by swapping and solving. Make me say which square root I keep (the nonnegative one) and why, and state the domain and range of the inverse. Then solve the same problem yourself for the restriction x <= 0, with one deliberate mistake in it (for example, keeping the nonnegative square root, or giving the wrong range). I'll find it by testing your answer with the input 4 and checking that f of your output gives 4 back. After I respond, check my reasoning and give me the fully corrected solution before we finish."
       }
     ],
     "open": [
       {
         "id": "open-1",
         "title": "Create Your Own",
-        "prompt": "Use the AI tool of your choice. Start by describing what you're confused about or curious about from Section FN6 (Inverse Functions). Ask the AI to help you explore that idea. Share what you learned and what surprised you."
+        "prompt": "Use the AI tool of your choice. Start by describing what you're confused about or curious about from Section FN6 (Inverse Functions). Ask the AI to help you explore that idea, one question at a time, without solving your CheckIt problem for you. Before you trust any answer it gives, check one of its steps against your notes or the FN6 support page, or test an inverse it gives by putting one output of the function into it. Share what you learned, what surprised you, and anything the AI got wrong."
       }
     ]
   },
@@ -191,7 +191,7 @@
       "id": "FN6",
       "label": "FN6: Inverse Functions",
       "sectionLabel": "FN6, Inverse Functions",
-      "intro": "Builds to the FN6 check: finding the inverse of a function with an odd power or root, or of a rational function.",
+      "intro": "Builds to the FN6 check: finding the inverse of a power or root function, (x + b)^r + a, or of a fraction, (ax + b)/(cx + d). <strong>Practice scope:</strong> the path practises both kinds of FN6 CheckIt problem with CheckIt's numbers (constants from 1, 2, 3, 5, 7; r = 3, 5, 7, 1/3, 1/5 or 1/7) and CheckIt's answer forms (roots written as fractional powers, power before constant). The horizontal line test and restricted domains in the FAQs go beyond the FN6 CheckIt exercise and are optional.",
       "graphs": {},
       "stages": [
         {
@@ -201,7 +201,7 @@
             {
               "id": "fn6-g1",
               "title": "Undo powers and roots",
-              "target": "Undo an odd power with the matching root, and a root with the matching power: \\(u^3 = v\\) means \\(u = \\sqrt[3]{v} = v^{1/3}\\).",
+              "target": "Undo an odd power with the matching root, and a root with the matching power: \\(u^3 = v\\) means \\(u = \\sqrt[3]{v} = v^{1/3}\\). An odd root of a negative number is a real number: \\((-8)^{1/3} = -2\\).",
               "cold": "Solve for \\(x\\): (a) \\(y = x^3\\) &nbsp; (b) \\(y = x^{1/5}\\)",
               "coldPlain": "Solve for x: (a) y = x^3, (b) y = x^(1/5).",
               "coldA": "(a) \\(x = \\sqrt[3]{y} = y^{1/3}\\). (b) Raise both sides to the 5th power: \\(x = y^5\\).",
@@ -221,10 +221,10 @@
               "id": "fn6-g2",
               "title": "Solve for x when x appears twice",
               "target": "Solve an equation like \\(y = \\dfrac{x + 4}{x - 2}\\) for \\(x\\): clear the fraction, move all \\(x\\) terms to one side, factor out \\(x\\), and divide.",
-              "cold": "Solve \\(y(2x + 3) = 5x - 1\\) for \\(x\\).",
-              "coldPlain": "Solve y(2x + 3) = 5x - 1 for x.",
-              "coldA": "\\(2xy + 3y = 5x - 1\\) → \\(2xy - 5x = -3y - 1\\) → \\(x(2y - 5) = -3y - 1\\) → \\(x = \\dfrac{-3y - 1}{2y - 5}\\) (or \\(\\dfrac{3y + 1}{5 - 2y}\\)).",
-              "solution": "Distribute: 2xy + 3y = 5x - 1. Get every x term on one side: 2xy - 5x = -3y - 1. Factor out x: x(2y - 5) = -3y - 1. Divide: x = (-3y - 1)/(2y - 5).",
+              "cold": "Solve \\(y(2x - 1) = 3x + 5\\) for \\(x\\).",
+              "coldPlain": "Solve y(2x - 1) = 3x + 5 for x.",
+              "coldA": "\\(2xy - y = 3x + 5\\) → \\(2xy - 3x = y + 5\\) → \\(x(2y - 3) = y + 5\\) → \\(x = \\dfrac{y + 5}{2y - 3}\\).",
+              "solution": "Distribute: 2xy - y = 3x + 5. Get every x term on one side and everything else on the other: 2xy - 3x = y + 5. Factor out x: x(2y - 3) = y + 5. Divide: x = (y + 5)/(2y - 3).",
               "mistake": "Trying to divide by x, or leaving x on both sides of the equation.",
               "again": "Solve \\(y = \\dfrac{x + 4}{x - 2}\\) for \\(x\\).",
               "againA": "\\(y(x - 2) = x + 4\\) → \\(xy - 2y = x + 4\\) → \\(xy - x = 2y + 4\\) → \\(x(y - 1) = 2y + 4\\) → \\(x = \\dfrac{2y + 4}{y - 1}\\).",
@@ -266,22 +266,18 @@
                 {
                   "label": "Videos",
                   "tab": "tab-videos"
-                },
-                {
-                  "label": "Apps",
-                  "tab": "tab-apps"
                 }
               ]
             },
             {
               "id": "fn6-t2",
               "title": "Swap and solve",
-              "target": "Find \\(f^{-1}(x)\\): write \\(y = f(x)\\), swap \\(x\\) and \\(y\\), then solve for \\(y\\).",
+              "target": "Find \\(f^{-1}(x)\\) for a one-to-one function: write \\(y = f(x)\\), swap \\(x\\) and \\(y\\), then solve for \\(y\\). (Every FN6 CheckIt function is one-to-one, so it always has an inverse.)",
               "cold": "Find the inverse of \\(f(x) = 3x - 7\\).",
               "coldPlain": "Find the inverse of f(x) = 3x - 7.",
               "coldA": "\\(x = 3y - 7\\) → \\(x + 7 = 3y\\) → \\(f^{-1}(x) = \\dfrac{x + 7}{3}\\).",
               "solution": "Write y = 3x - 7. Swap x and y: x = 3y - 7. Solve for y: x + 7 = 3y, so y = (x + 7)/3. That y is f^(-1)(x).",
-              "mistake": "Solving for x without swapping, which gives the right steps but the wrong variable.",
+              "mistake": "Solving y = 3x - 7 for x without swapping: you get the right formula, but written in y, not as f^(-1)(x).",
               "again": "Find the inverse of \\(g(x) = 5 - 2x\\).",
               "againA": "\\(x = 5 - 2y\\) → \\(2y = 5 - x\\) → \\(g^{-1}(x) = \\dfrac{5 - x}{2}\\).",
               "reflect": "Why does swapping \\(x\\) and \\(y\\) turn a function into its inverse?",
@@ -293,23 +289,19 @@
                 {
                   "label": "Videos",
                   "tab": "tab-videos"
-                },
-                {
-                  "label": "Apps",
-                  "tab": "tab-apps"
                 }
               ]
             },
             {
               "id": "fn6-t3",
               "title": "Inverses with odd powers and roots",
-              "target": "Find the inverse of \\(f(x) = a + (x + b)^r\\), where \\(r\\) is an odd power or root: swap, isolate the power, undo it, then isolate \\(y\\).",
-              "cold": "Find the inverse of \\(f(x) = 2 + (x - 3)^5\\).",
-              "coldPlain": "Find the inverse of f(x) = 2 + (x - 3)^5.",
-              "coldA": "\\(x = 2 + (y - 3)^5\\) → \\(x - 2 = (y - 3)^5\\) → \\((x - 2)^{1/5} = y - 3\\) → \\(f^{-1}(x) = (x - 2)^{1/5} + 3\\).",
-              "solution": "Swap: x = 2 + (y - 3)^5. Subtract 2: x - 2 = (y - 3)^5. Undo the 5th power with a 5th root: (x - 2)^(1/5) = y - 3. Add 3: y = (x - 2)^(1/5) + 3. Notice the operations are undone in reverse order.",
-              "mistake": "Taking the root before subtracting 2, or undoing the 5th power by dividing by 5.",
-              "again": "Find the inverse of \\(g(x) = -1 + (x + 5)^{1/3}\\).",
+              "target": "Find the inverse of \\(f(x) = (x + b)^r + a\\) (CheckIt's form), where \\(r\\) is an odd power or root: swap, isolate the power, undo it, then isolate \\(y\\).",
+              "cold": "Find the inverse of \\(f(x) = (x + 1)^5 - 3\\).",
+              "coldPlain": "Find the inverse of f(x) = (x + 1)^5 - 3.",
+              "coldA": "\\(x = (y + 1)^5 - 3\\) → \\(x + 3 = (y + 1)^5\\) → \\((x + 3)^{1/5} = y + 1\\) → \\(f^{-1}(x) = (x + 3)^{1/5} - 1\\).",
+              "solution": "Swap: x = (y + 1)^5 - 3. Add 3: x + 3 = (y + 1)^5. Undo the 5th power with a 5th root: (x + 3)^(1/5) = y + 1. Subtract 1: y = (x + 3)^(1/5) - 1. Notice the operations are undone in reverse order.",
+              "mistake": "Taking the root before adding 3, or undoing the 5th power by dividing by 5.",
+              "again": "Find the inverse of \\(g(x) = (x + 5)^{1/3} - 1\\).",
               "againA": "\\(x + 1 = (y + 5)^{1/3}\\) → \\((x + 1)^3 = y + 5\\) → \\(g^{-1}(x) = (x + 1)^3 - 5\\).",
               "reflect": "Why do you undo the operations in the reverse of the order they were done?",
               "related": [
@@ -320,12 +312,9 @@
                 {
                   "label": "Videos",
                   "tab": "tab-videos"
-                },
-                {
-                  "label": "Apps",
-                  "tab": "tab-apps"
                 }
-              ]
+              ],
+              "note": "Roots here are real odd roots: the cube root of -8 is -2. CheckIt writes roots as fractional powers, like (x + 3)^(1/5)."
             },
             {
               "id": "fn6-t4",
@@ -335,9 +324,9 @@
               "coldPlain": "Find the inverse of f(x) = (2x + 3)/(x - 5).",
               "coldA": "\\(x = \\dfrac{2y + 3}{y - 5}\\) → \\(xy - 5x = 2y + 3\\) → \\(xy - 2y = 5x + 3\\) → \\(y(x - 2) = 5x + 3\\) → \\(f^{-1}(x) = \\dfrac{5x + 3}{x - 2}\\).",
               "solution": "Swap: x = (2y + 3)/(y - 5). Multiply both sides by (y - 5): xy - 5x = 2y + 3. Put the y terms on one side: xy - 2y = 5x + 3. Factor out y: y(x - 2) = 5x + 3. Divide: y = (5x + 3)/(x - 2).",
-              "mistake": "Forgetting to multiply the whole left side by (y - 5), or not factoring y out.",
-              "again": "Find the inverse of \\(g(x) = \\dfrac{-3x + 1}{2x + 7}\\).",
-              "againA": "\\(x(2y + 7) = -3y + 1\\) → \\(2xy + 3y = -7x + 1\\) → \\(y(2x + 3) = -7x + 1\\) → \\(g^{-1}(x) = \\dfrac{-7x + 1}{2x + 3}\\).",
+              "mistake": "Multiplying only part of the equation by (y - 5) (x(y - 5) must become xy - 5x), or not factoring out y.",
+              "again": "Find the inverse of \\(g(x) = \\dfrac{-5x + 2}{x + 3}\\).",
+              "againA": "\\(x(y + 3) = -5y + 2\\) → \\(xy + 3x = -5y + 2\\) → \\(xy + 5y = -3x + 2\\) → \\(y(x + 5) = -3x + 2\\) → \\(g^{-1}(x) = \\dfrac{-3x + 2}{x + 5}\\). CheckIt may print it as \\(-\\dfrac{3x - 2}{x + 5}\\), which is the same.",
               "reflect": "Which \"Get ready\" stop does this skill use, and how?",
               "related": [
                 {
@@ -347,12 +336,9 @@
                 {
                   "label": "Videos",
                   "tab": "tab-videos"
-                },
-                {
-                  "label": "Apps",
-                  "tab": "tab-apps"
                 }
-              ]
+              ],
+              "note": "CheckIt may print a fraction with the minus out front, like -(7x - 1)/(2x + 3); that equals (-7x + 1)/(2x + 3)."
             },
             {
               "id": "fn6-t5",
@@ -360,11 +346,11 @@
               "target": "Check an inverse by composing both ways: if \\(f(f^{-1}(x)) = x\\) and \\(f^{-1}(f(x)) = x\\), your inverse is right.",
               "cold": "Check that \\(f^{-1}(x) = \\dfrac{x + 7}{3}\\) is the inverse of \\(f(x) = 3x - 7\\).",
               "coldPlain": "Check that f^(-1)(x) = (x + 7)/3 is the inverse of f(x) = 3x - 7.",
-              "coldA": "\\(f\\left(\\dfrac{x + 7}{3}\\right) = 3 \\cdot \\dfrac{x + 7}{3} - 7 = x + 7 - 7 = x\\). It checks out.",
-              "solution": "Plug f^(-1)(x) into f: f((x + 7)/3) = 3(x + 7)/3 - 7 = x + 7 - 7 = x. Since the result is exactly x, the inverse is correct.",
+              "coldA": "\\(f\\left(\\dfrac{x + 7}{3}\\right) = 3 \\cdot \\dfrac{x + 7}{3} - 7 = x + 7 - 7 = x\\). It checks out. And \\(f^{-1}(f(x)) = \\dfrac{(3x - 7) + 7}{3} = \\dfrac{3x}{3} = x\\). Both directions give \\(x\\).",
+              "solution": "Plug f^(-1)(x) into f: f((x + 7)/3) = 3(x + 7)/3 - 7 = x + 7 - 7 = x. Since the result is exactly x, the inverse is correct. Then the other way: f^(-1)(3x - 7) = ((3x - 7) + 7)/3 = x.",
               "mistake": "Plugging in a single number and stopping. A number check is a good start, but composing proves it.",
-              "again": "Check that \\(g(x) = (x - 2)^{1/5} + 3\\) is the inverse of \\(f(x) = 2 + (x - 3)^5\\) by finding both \\(f(g(x))\\) and \\(g(f(x))\\).",
-              "againA": "\\(f(g(x)) = 2 + \\left((x - 2)^{1/5}\\right)^5 = 2 + (x - 2) = x\\). \\(g(f(x)) = \\left((x - 3)^5\\right)^{1/5} + 3 = (x - 3) + 3 = x\\). Both give \\(x\\), so they are inverses.",
+              "again": "Check that \\(g(x) = (x + 3)^{1/5} - 1\\) is the inverse of \\(f(x) = (x + 1)^5 - 3\\) by finding both \\(f(g(x))\\) and \\(g(f(x))\\).",
+              "againA": "\\(f(g(x)) = \\left((x + 3)^{1/5} - 1 + 1\\right)^5 - 3 = (x + 3) - 3 = x\\). \\(g(f(x)) = \\left((x + 1)^5 - 3 + 3\\right)^{1/5} - 1 = (x + 1) - 1 = x\\). Both give \\(x\\), so they are inverses.",
               "reflect": "How can you use this check on the real CheckIt?",
               "related": [
                 {
@@ -377,7 +363,8 @@
                 }
               ],
               "stretch": "Check that \\(f^{-1}(x) = \\dfrac{5x + 3}{x - 2}\\) is the inverse of \\(f(x) = \\dfrac{2x + 3}{x - 5}\\) by finding \\(f(f^{-1}(x))\\).",
-              "stretchA": "Top: \\(2 \\cdot \\dfrac{5x + 3}{x - 2} + 3 = \\dfrac{13x}{x - 2}\\). Bottom: \\(\\dfrac{5x + 3}{x - 2} - 5 = \\dfrac{13}{x - 2}\\). Divide: \\(\\dfrac{13x}{x - 2} \\cdot \\dfrac{x - 2}{13} = x\\). It checks out."
+              "stretchA": "Top: \\(2 \\cdot \\dfrac{5x + 3}{x - 2} + 3 = \\dfrac{13x}{x - 2}\\). Bottom: \\(\\dfrac{5x + 3}{x - 2} - 5 = \\dfrac{13}{x - 2}\\). Divide: \\(\\dfrac{13x}{x - 2} \\cdot \\dfrac{x - 2}{13} = x\\). It checks out.",
+              "note": "Roots here are real odd roots: the cube root of -8 is -2. CheckIt writes roots as fractional powers, like (x + 3)^(1/5)."
             }
           ]
         },
@@ -389,13 +376,13 @@
               "id": "fn6-f1",
               "title": "Practice check",
               "target": "Find the inverse of an odd-power or odd-root function and of a rational function, then check each inverse by composition.",
-              "cold": "Find the inverse of each function.<br>(a) \\(h(x) = -5 + (x + 7)^{1/3}\\)<br>(b) \\(f(x) = \\dfrac{7x - 2}{3x + 1}\\)<br>(c) Check your answer to (a): show that \\(h(h^{-1}(x)) = x\\) and \\(h^{-1}(h(x)) = x\\).<br>(d) <em>Challenge:</em> check your answer to (b) by showing \\(f(f^{-1}(x)) = x\\).",
-              "coldPlain": "Find the inverse of each function: (a) h(x) = -5 + (x + 7)^(1/3), (b) f(x) = (7x - 2)/(3x + 1). (c) Check your answer to (a) by showing h(h^(-1)(x)) = x and h^(-1)(h(x)) = x. (d) Challenge: check your answer to (b) by showing f(f^(-1)(x)) = x.",
-              "coldA": "(a) \\(h^{-1}(x) = (x + 5)^3 - 7\\) (b) \\(f^{-1}(x) = \\dfrac{-x - 2}{3x - 7}\\) (or \\(\\dfrac{x + 2}{7 - 3x}\\))<br>(c) \\(h(h^{-1}(x)) = -5 + \\left((x + 5)^3 - 7 + 7\\right)^{1/3} = -5 + (x + 5) = x\\). \\(h^{-1}(h(x)) = \\left(-5 + (x + 7)^{1/3} + 5\\right)^3 - 7 = (x + 7) - 7 = x\\).<br>(d) Top: \\(7 \\cdot \\dfrac{-x - 2}{3x - 7} - 2 = \\dfrac{-13x}{3x - 7}\\). Bottom: \\(3 \\cdot \\dfrac{-x - 2}{3x - 7} + 1 = \\dfrac{-13}{3x - 7}\\). Divide: \\(\\dfrac{-13x}{-13} = x\\).",
-              "solution": "(a) Swap: x = -5 + (y + 7)^(1/3). Add 5: x + 5 = (y + 7)^(1/3). Cube: (x + 5)^3 = y + 7. Subtract 7: y = (x + 5)^3 - 7. (b) Swap: x = (7y - 2)/(3y + 1). Multiply: 3xy + x = 7y - 2. Collect y terms: 3xy - 7y = -x - 2. Factor: y(3x - 7) = -x - 2. Divide: y = (-x - 2)/(3x - 7). (c) h(h^(-1)(x)) = -5 + ((x + 5)^3 - 7 + 7)^(1/3) = -5 + (x + 5) = x, and h^(-1)(h(x)) = (-5 + (x + 7)^(1/3) + 5)^3 - 7 = (x + 7) - 7 = x. (d) f(f^(-1)(x)): the top 7(-x - 2)/(3x - 7) - 2 simplifies to -13x/(3x - 7); the bottom 3(-x - 2)/(3x - 7) + 1 simplifies to -13/(3x - 7); dividing gives x.",
-              "mistake": "In (b), moving terms but forgetting to factor out y; in (a), undoing the cube root before adding 5.",
-              "again": "Find the inverse of each function.<br>(a) \\(g(x) = 3 + (x - 1)^7\\)<br>(b) \\(f(x) = \\dfrac{x + 5}{-2x + 3}\\)<br>(c) Check your answer to (a): show that \\(g(g^{-1}(x)) = x\\) and \\(g^{-1}(g(x)) = x\\).<br>(d) <em>Challenge:</em> check your answer to (b) by showing \\(f(f^{-1}(x)) = x\\).",
-              "againA": "(a) \\(g^{-1}(x) = (x - 3)^{1/7} + 1\\) (b) \\(f^{-1}(x) = \\dfrac{3x - 5}{2x + 1}\\) (equivalently \\(\\dfrac{-3x + 5}{-2x - 1}\\))<br>(c) \\(g(g^{-1}(x)) = 3 + \\left((x - 3)^{1/7}\\right)^7 = 3 + (x - 3) = x\\). \\(g^{-1}(g(x)) = \\left((x - 1)^7\\right)^{1/7} + 1 = (x - 1) + 1 = x\\).<br>(d) Top: \\(\\dfrac{3x - 5}{2x + 1} + 5 = \\dfrac{13x}{2x + 1}\\). Bottom: \\(-2 \\cdot \\dfrac{3x - 5}{2x + 1} + 3 = \\dfrac{13}{2x + 1}\\). Divide: \\(x\\).",
+              "cold": "Find the inverse of each function.<br>(a) \\(h(x) = (x - 2)^{1/3} + 5\\)<br>(b) \\(f(x) = \\dfrac{7x - 2}{3x + 1}\\)<br>(c) Check your answer to (a): show that \\(h(h^{-1}(x)) = x\\) and \\(h^{-1}(h(x)) = x\\).<br>(d) <em>Challenge:</em> check your answer to (b) by showing \\(f(f^{-1}(x)) = x\\).",
+              "coldPlain": "Find the inverse of each function: (a) h(x) = (x - 2)^(1/3) + 5, (b) f(x) = (7x - 2)/(3x + 1). (c) Check your answer to (a) by showing h(h^(-1)(x)) = x and h^(-1)(h(x)) = x. (d) Challenge: check your answer to (b) by showing f(f^(-1)(x)) = x.",
+              "coldA": "(a) \\(h^{-1}(x) = (x - 5)^3 + 2\\) (b) \\(f^{-1}(x) = \\dfrac{-x - 2}{3x - 7}\\) (or \\(\\dfrac{x + 2}{7 - 3x}\\)). CheckIt may print this as \\(-\\dfrac{x + 2}{3x - 7}\\).<br>(c) \\(h(h^{-1}(x)) = \\left((x - 5)^3 + 2 - 2\\right)^{1/3} + 5 = (x - 5) + 5 = x\\). \\(h^{-1}(h(x)) = \\left((x - 2)^{1/3} + 5 - 5\\right)^3 + 2 = (x - 2) + 2 = x\\).<br>(d) Top: \\(7 \\cdot \\dfrac{-x - 2}{3x - 7} - 2 = \\dfrac{-13x}{3x - 7}\\). Bottom: \\(3 \\cdot \\dfrac{-x - 2}{3x - 7} + 1 = \\dfrac{-13}{3x - 7}\\). Divide: \\(\\dfrac{-13x}{-13} = x\\).",
+              "solution": "(a) Swap: x = (y - 2)^(1/3) + 5. Subtract 5: x - 5 = (y - 2)^(1/3). Cube: (x - 5)^3 = y - 2. Add 2: y = (x - 5)^3 + 2. (b) Swap: x = (7y - 2)/(3y + 1). Multiply: 3xy + x = 7y - 2. Collect y terms: 3xy - 7y = -x - 2. Factor: y(3x - 7) = -x - 2. Divide: y = (-x - 2)/(3x - 7). (c) h(h^(-1)(x)) = ((x - 5)^3 + 2 - 2)^(1/3) + 5 = (x - 5) + 5 = x, and h^(-1)(h(x)) = ((x - 2)^(1/3) + 5 - 5)^3 + 2 = (x - 2) + 2 = x. (d) f(f^(-1)(x)): the top 7(-x - 2)/(3x - 7) - 2 simplifies to -13x/(3x - 7); the bottom 3(-x - 2)/(3x - 7) + 1 simplifies to -13/(3x - 7); dividing gives x.",
+              "mistake": "In (b), moving terms but forgetting to factor out y; in (a), cubing before subtracting 5.",
+              "again": "Find the inverse of each function.<br>(a) \\(g(x) = (x - 1)^7 + 3\\)<br>(b) \\(f(x) = -\\dfrac{x + 5}{2x - 3}\\)<br>(c) Check your answer to (a): show that \\(g(g^{-1}(x)) = x\\) and \\(g^{-1}(g(x)) = x\\).<br>(d) <em>Challenge:</em> check your answer to (b) by showing \\(f(f^{-1}(x)) = x\\).",
+              "againA": "(a) \\(g^{-1}(x) = (x - 3)^{1/7} + 1\\) (b) First move the minus into the denominator: \\(f(x) = \\dfrac{x + 5}{-2x + 3}\\). Then \\(f^{-1}(x) = \\dfrac{3x - 5}{2x + 1}\\) (equivalently \\(\\dfrac{-3x + 5}{-2x - 1}\\))<br>(c) \\(g(g^{-1}(x)) = \\left((x - 3)^{1/7}\\right)^7 + 3 = (x - 3) + 3 = x\\). \\(g^{-1}(g(x)) = \\left((x - 1)^7\\right)^{1/7} + 1 = (x - 1) + 1 = x\\).<br>(d) Top: \\(\\dfrac{3x - 5}{2x + 1} + 5 = \\dfrac{13x}{2x + 1}\\). Bottom: \\(-2 \\cdot \\dfrac{3x - 5}{2x + 1} + 3 = \\dfrac{13}{2x + 1}\\). Divide: \\(x\\).",
               "reflect": "Which type (roots/powers or rational) do you want more practice with?",
               "related": [
                 {
@@ -406,7 +393,8 @@
                   "label": "AI Prompts",
                   "tab": "tab-prompts"
                 }
-              ]
+              ],
+              "note": "Roots here are real odd roots: the cube root of -8 is -2. CheckIt writes roots as fractional powers, like (x + 3)^(1/5). CheckIt may print a fraction with the minus out front, like -(7x - 1)/(2x + 3); that equals (-7x + 1)/(2x + 3)."
             }
           ]
         }

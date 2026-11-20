@@ -147,6 +147,59 @@
         "faq-10",
         "faq-13"
       ]
+    },
+    {
+      "id": "vid-6",
+      "title": "Ex 1: Determine if the Graph of a Relation is a One-to-One Function",
+      "url": "https://youtu.be/tbSGdcSN8RE",
+      "description": "Uses the horizontal line test to decide whether a graph is one-to-one, and so whether the function has an inverse.",
+      "category": "one-to-one",
+      "relatedFaqs": [
+        "faq-3",
+        "faq-5",
+        "faq-7"
+      ]
+    },
+    {
+      "id": "vid-7",
+      "title": "Lesson: Inverse Functions",
+      "url": "https://youtu.be/q6y0ToEhT1E",
+      "description": "A lesson on what an inverse function is, why it swaps inputs and outputs, and why only one-to-one functions have inverses.",
+      "category": "values",
+      "relatedFaqs": [
+        "faq-4"
+      ]
+    },
+    {
+      "id": "vid-8",
+      "title": "Ex 1: Find the Inverse of a Function",
+      "url": "https://youtu.be/5MigilleeY4",
+      "description": "Finds an inverse by writing y = f(x), swapping x and y, and solving for y.",
+      "category": "finding",
+      "relatedFaqs": [
+        "faq-9"
+      ]
+    },
+    {
+      "id": "vid-9",
+      "title": "Ex: Find the Inverse of a Rational Function",
+      "url": "https://youtu.be/VEbJYAbSOxQ",
+      "description": "Finds the inverse of a rational function by swapping x and y, clearing the fraction, collecting the y terms, and factoring out y.",
+      "category": "finding",
+      "relatedFaqs": [
+        "faq-9"
+      ]
+    },
+    {
+      "id": "vid-10",
+      "title": "Ex: Restrict the Domain to Make a Function 1 to 1, Then Find the Inverse",
+      "url": "https://youtu.be/rsJ14O5-KDw",
+      "description": "Restricts the domain so a function becomes one-to-one, then finds its inverse and states the inverse's domain and range.",
+      "category": "finding",
+      "relatedFaqs": [
+        "faq-11",
+        "faq-12"
+      ]
     }
   ],
   "apps": [],

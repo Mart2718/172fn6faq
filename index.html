@@ -644,10 +644,12 @@ function renderVideos() {
   }
 
   const categoryLabels = {
+    'one-to-one': { title: 'One-to-One Functions', desc: 'Using the horizontal line test to decide whether a function has an inverse' },
+    'finding': { title: 'Finding Inverses', desc: 'Finding an inverse by swapping x and y and solving, including restricted domains' },
     'values': { title: 'Function & Inverse Function Values', desc: 'Evaluating a function and its inverse; the table and shortcut videos are Extension (beyond the FN6 CheckIt exercise)' },
     'verifying': { title: 'Verifying Inverses', desc: 'Confirming two functions are inverses using composition' }
   };
-  const categoryOrder = ['values', 'verifying'];
+  const categoryOrder = ['one-to-one', 'values', 'finding', 'verifying'];
 
   categoryOrder.forEach(cat => {
     const vids = DATA.videos.filter(v => v.category === cat);
